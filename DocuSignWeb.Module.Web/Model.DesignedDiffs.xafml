@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="20.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="20.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="DocuSignEnvelope_DetailView">
+      <Items>
+        <PropertyEditor Id="ClientRecipient.EmailAddress" Caption="Recipient Email Address" />
+        <PropertyEditor Id="ClientRecipient.Name" Caption="Recipient Name" />
+        <PropertyEditor Id="ManagerRecipient.EmailAddress" Caption="Sender Email Address" />
+        <PropertyEditor Id="ManagerRecipient.Name" Caption="Sender Name" />
+        <PropertyEditor Id="Template" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxLookupPropertyEditor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="DocuSignEnvelope" RelativeSize="100">
+              <LayoutGroup Id="DocuSignEnvelope_col1" RelativeSize="50">
+                <LayoutItem Id="Manager" ViewItem="Manager" Index="0" RelativeSize="6.7510548523206753" IsNewNode="True" />
+                <LayoutItem Id="ManagerRecipient.Name" Index="1" RelativeSize="5.0632911392405067" />
+                <LayoutItem Id="ManagerRecipient.EmailAddress" Index="2" RelativeSize="5.0632911392405067" />
+                <LayoutItem Id="ClientRecipient.Name" Index="3" RelativeSize="5.0632911392405067" />
+                <LayoutItem Id="ClientRecipient.EmailAddress" Index="4" RelativeSize="78.059071729957807" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocuSignEnvelope_col2" RelativeSize="50" Caption="DocuSignEnvelope_col2">
+                <LayoutItem Id="Subject" ViewItem="Subject" Index="0" RelativeSize="6.7510548523206753" IsNewNode="True" Removed="True" />
+                <LayoutItem Id="Template" RelativeSize="93.248945147679322" Index="1" />
+                <LayoutItem Id="Manager" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
